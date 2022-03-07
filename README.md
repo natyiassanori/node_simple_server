@@ -14,7 +14,7 @@ Instructions to run the project:
 
 *I used Node version 12.22.1.*
 
-More about the implementation:
+# More about the implementation:
 
 Hi folks! My idea in this project was to make the implementation as simple as possible. At first I considered dividing the implementation into Controller and Service classes, but due to the small size of the project (and also a little lack of experience in Node), I chose to leave the entire implementation in *index.js* file.
 
@@ -69,7 +69,7 @@ The method ```getRequest``` is called to update *requests.txt* with the ```reque
 
 3) *setInterval*
 
-The *setInterval* functionis executed considering the interval determined by the ```nextComparsionInterval```. 
+The *setInterval* function is executed considering the interval determined by the ```nextComparsionInterval```. 
 Every time this function is executed, a comparison is performed and checks if the ```nextExpirationDate``` is less than the current date. If true, it is a sign that there may be requests that should be removed. Next, I'm iterating through the elements of ```requestExpirationDates``` array and if the element has the lowest date or equals date as the ```nextExpirationDate```, this element is removed from the array.
 The file *requests.txt* is updated with the new value of ```requestExpirationDates```.
 
