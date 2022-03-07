@@ -41,7 +41,8 @@ The ```nextComparsionInterval``` is used as a interval to compare the ```nextExp
 To make a request to obtain the total requests on the last 60 seconds, the user must to make a request to the path ```/requestCounter```.
 When a user makes a request, the ```requestExpirationDates``` is updated with the actual date and time + 60 seconds. This is the time the request must be deleted and not considered for counting. If the ```requestExpirationDates``` is empty - the actual request is the first request on the last 60 seconds - the ```expirationDate``` variable is also updated with this date and time.
 
-```server.get('/requestCounter', (req, res) =>{
+```
+server.get('/requestCounter', (req, res) =>{
 
   let expirationDate = new Date(new Date().getTime() + 1000 * 60);
   if(requestExpirationDates.length === 0){
@@ -74,7 +75,8 @@ Every time this function is executed, a comparison is performed and checks if th
 The file *requests.txt* is updated with the new value of ```requestExpirationDates```.
 
 
-```setInterval(() => { 
+```
+setInterval(() => { 
     if(nextExpirationDate <= new Date() && requestExpirationDates.length !== 0){
       requestExpirationDates.every(element => {
         if(element <= nextExpirationDate){
