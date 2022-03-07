@@ -70,6 +70,11 @@ The method ```getRequest``` is called to update *requests.txt* with the ```reque
 
 3) *setInterval*
 
+The *setInterval* functionis executed considering the interval determined by the ```nextComparsionInterval```. 
+Every time this function is executed, a comparison is performed and checks if the ```nextExpirationDate``` is less than the current date. If true, it is a sign that there may be requests that should be removed. Next, I'm iterating through the elements of ```requestExpirationDates``` array and if the element has the lowest date or equals date as the ```nextExpirationDate```, this element is removed from the array.
+The file *requests.txt* is updated with the new value of ```requestExpirationDates```.
+
+
 ```setInterval(() => { 
     if(nextExpirationDate <= new Date() && requestExpirationDates.length !== 0){
       requestExpirationDates.every(element => {
@@ -85,3 +90,12 @@ The method ```getRequest``` is called to update *requests.txt* with the ```reque
 
 }, nextComparsionInterval);
 ```
+
+
+These were the three main points of the project. The project also has a file reading method and some other auxiliary functions that manipulate the values of the variables mentioned above.
+
+Unfortunately I was not able to perform the tests for the methods I created. As I have little knowledge of Node, I would spend a significant amount of time building the tests, considering that the little contact I had with javascript tests I found them quite challenging :( 
+
+And I apologize for the delay in delivery. Last week there was a Carnival holiday here in Brazil and the days that I had left of the week were very tight at work.
+
+Please let me know if you have any problems running the code or if you have any questions regarding the implementation.
