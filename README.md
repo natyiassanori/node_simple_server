@@ -93,7 +93,7 @@ The file *requests.txt* is updated with the new value of ```requestExpirationDat
 
 These were the three main points of the project. The project also has a file reading method and some other auxiliary functions that manipulate the values of the variables mentioned above.
 
-Unfortunately I was not able to perform the tests for the methods I created. As I have little knowledge of Node, I would spend a significant amount of time building the tests, considering that the little contact I had with javascript tests I found them quite challenging :( 
+Unfortunately I was not able to perform the unit tests for the methods I created. As I have little knowledge of Node, I would spend a significant amount of time building the tests, considering that the little contact I had with javascript tests I found them quite challenging :( 
 
 And I apologize for the delay in delivery. Last week there was a Carnival holiday here in Brazil and the days that I had left of the week were very tight at work.
 
