@@ -18,7 +18,5 @@
     "url": "https://github.com/natyiassanori/node_simple_server/issues"
   },
   "homepage": "https://github.com/natyiassanori/node_simple_server#readme",
-  "dependencies": {
-    "express": "^4.17.3"
-  }
+  "dependencies": {}
 }
